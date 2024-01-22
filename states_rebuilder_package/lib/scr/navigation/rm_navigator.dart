@@ -742,7 +742,7 @@ MaterialApp(
         return showCupertinoModalPopup<T>(
           context: navigatorState.context,
           builder: (_) => cupertinoModalPopup,
-          semanticsDismissible: semanticsDismissible,
+          semanticsDismissible: semanticsDismissible ?? false,
           filter: filter,
         );
       } catch (e) {
