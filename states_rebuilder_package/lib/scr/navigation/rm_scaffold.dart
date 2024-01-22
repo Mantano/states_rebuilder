@@ -95,14 +95,14 @@ No valid BuildContext is defined yet
   ///    }
   ///   }
   ///  ```
-  PersistentBottomSheetController<T> showBottomSheet<T>(
+  PersistentBottomSheetController showBottomSheet(
     Widget bottomSheet, {
     Color? backgroundColor,
     double? elevation,
     ShapeBorder? shape,
     Clip? clipBehavior,
   }) {
-    final r = scaffoldState.showBottomSheet<T>(
+    final r = scaffoldState.showBottomSheet(
       (_) => bottomSheet,
       backgroundColor: backgroundColor,
       elevation: elevation,
